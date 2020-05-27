@@ -10380,7 +10380,7 @@ var styles_module_default = /*#__PURE__*/__webpack_require__.n(styles_module);
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */const LINK_CLASS_NAME='table-of-contents__link';const ACTIVE_LINK_CLASS_NAME='table-of-contents__link--active';const TOP_OFFSET=100;function DocTOC({headings}){hooks_useTOCHighlight(LINK_CLASS_NAME,ACTIVE_LINK_CLASS_NAME,TOP_OFFSET);return/*#__PURE__*/react_default.a.createElement("div",{className:"col col--3"},/*#__PURE__*/react_default.a.createElement("div",{className:styles_module_default.a.tableOfContents},/*#__PURE__*/react_default.a.createElement(Headings,{headings:headings})));}/* eslint-disable jsx-a11y/control-has-associated-label */function Headings({headings,isChild}){if(!headings.length){return null;}return/*#__PURE__*/react_default.a.createElement("ul",{className:isChild?'':'table-of-contents table-of-contents__left-border'},headings.map(heading=>/*#__PURE__*/react_default.a.createElement("li",{key:heading.id},/*#__PURE__*/react_default.a.createElement("a",{href:`#${heading.id}`,className:LINK_CLASS_NAME,dangerouslySetInnerHTML:{__html:heading.value}}),/*#__PURE__*/react_default.a.createElement(Headings,{isChild:true,headings:heading.children}))));}function DocItem(props){const{siteConfig={}}=Object(useDocusaurusContext["a" /* default */])();const{url:siteUrl,title:siteTitle}=siteConfig;const{content:DocContent}=props;const{metadata}=DocContent;const{description,title,permalink,editUrl,lastUpdatedAt,lastUpdatedBy,version}=metadata;const{frontMatter:{image:metaImage,keywords,hide_title:hideTitle,hide_table_of_contents:hideTableOfContents}}=DocContent;const metaTitle=title?`${title} | ${siteTitle}`:siteTitle;let metaImageUrl=siteUrl+Object(useBaseUrl["a" /* default */])(metaImage);if(!Object(isInternalUrl["a" /* default */])(metaImage)){metaImageUrl=metaImage;}return/*#__PURE__*/react_default.a.createElement(react_default.a.Fragment,null,/*#__PURE__*/react_default.a.createElement(Head["a" /* default */],null,/*#__PURE__*/react_default.a.createElement("title",null,metaTitle),/*#__PURE__*/react_default.a.createElement("meta",{property:"og:title",content:metaTitle}),description&&/*#__PURE__*/react_default.a.createElement("meta",{name:"description",content:description}),description&&/*#__PURE__*/react_default.a.createElement("meta",{property:"og:description",content:description}),keywords&&keywords.length&&/*#__PURE__*/react_default.a.createElement("meta",{name:"keywords",content:keywords.join(',')}),metaImage&&/*#__PURE__*/react_default.a.createElement("meta",{property:"og:image",content:metaImageUrl}),metaImage&&/*#__PURE__*/react_default.a.createElement("meta",{property:"twitter:image",content:metaImageUrl}),metaImage&&/*#__PURE__*/react_default.a.createElement("meta",{name:"twitter:image:alt",content:`Image for ${title}`}),permalink&&/*#__PURE__*/react_default.a.createElement("meta",{property:"og:url",content:siteUrl+permalink}),permalink&&/*#__PURE__*/react_default.a.createElement("link",{rel:"canonical",href:siteUrl+permalink})),/*#__PURE__*/react_default.a.createElement("div",{className:classnames_default()('container padding-vert--lg',styles_module_default.a.docItemWrapper)},/*#__PURE__*/react_default.a.createElement("div",{className:"row"},/*#__PURE__*/react_default.a.createElement("div",{className:classnames_default()('col',{[styles_module_default.a.docItemCol]:!hideTableOfContents})},/*#__PURE__*/react_default.a.createElement("div",{className:styles_module_default.a.docItemContainer},/*#__PURE__*/react_default.a.createElement("article",null,version&&/*#__PURE__*/react_default.a.createElement("div",null,/*#__PURE__*/react_default.a.createElement("span",{className:"badge badge--secondary"},"Version: ",version)),!hideTitle&&/*#__PURE__*/react_default.a.createElement("header",null,/*#__PURE__*/react_default.a.createElement("h1",{className:styles_module_default.a.docTitle},title)),/*#__PURE__*/react_default.a.createElement("div",{className:"markdown"},/*#__PURE__*/react_default.a.createElement(DocContent,null))))),!hideTableOfContents&&DocContent.rightToc&&/*#__PURE__*/react_default.a.createElement(DocTOC,{headings:DocContent.rightToc}))));}/* harmony default export */ var theme_DocItem = __webpack_exports__["default"] = (DocItem);
+ */const LINK_CLASS_NAME='table-of-contents__link';const ACTIVE_LINK_CLASS_NAME='table-of-contents__link--active';const TOP_OFFSET=100;function DocTOC({headings}){hooks_useTOCHighlight(LINK_CLASS_NAME,ACTIVE_LINK_CLASS_NAME,TOP_OFFSET);return/*#__PURE__*/react_default.a.createElement("div",{className:"col col--3"},/*#__PURE__*/react_default.a.createElement("div",{className:styles_module_default.a.tableOfContents},/*#__PURE__*/react_default.a.createElement(Headings,{headings:headings})));}/* eslint-disable jsx-a11y/control-has-associated-label */function Headings({headings,isChild}){if(!headings.length){return null;}return/*#__PURE__*/react_default.a.createElement("ul",{className:isChild?'':'table-of-contents table-of-contents__left-border'},headings.map(heading=>/*#__PURE__*/react_default.a.createElement("li",{key:heading.id},/*#__PURE__*/react_default.a.createElement("a",{href:`#${heading.id}`,className:LINK_CLASS_NAME,dangerouslySetInnerHTML:{__html:heading.value}}),/*#__PURE__*/react_default.a.createElement(Headings,{isChild:true,headings:heading.children}))));}function DocItem(props){const{siteConfig={}}=Object(useDocusaurusContext["a" /* default */])();const{url:siteUrl,title:siteTitle}=siteConfig;const{content:DocContent}=props;const{metadata}=DocContent;const{description,title,permalink,editUrl,lastUpdatedAt,lastUpdatedBy,version}=metadata;const{frontMatter:{image:metaImage,keywords,hide_title:hideTitle,hide_table_of_contents:hideTableOfContents}}=DocContent;const metaTitle=title?`${title} | ${siteTitle}`:siteTitle;let metaImageUrl=siteUrl+Object(useBaseUrl["a" /* default */])(metaImage);if(!Object(isInternalUrl["a" /* default */])(metaImage)){metaImageUrl=metaImage;}return/*#__PURE__*/react_default.a.createElement(react_default.a.Fragment,null,/*#__PURE__*/react_default.a.createElement(Head["a" /* default */],null,/*#__PURE__*/react_default.a.createElement("title",null,metaTitle),/*#__PURE__*/react_default.a.createElement("meta",{property:"og:title",content:metaTitle}),description&&/*#__PURE__*/react_default.a.createElement("meta",{name:"description",content:description}),description&&/*#__PURE__*/react_default.a.createElement("meta",{property:"og:description",content:description}),keywords&&keywords.length&&/*#__PURE__*/react_default.a.createElement("meta",{name:"keywords",content:keywords.join(',')}),metaImage&&/*#__PURE__*/react_default.a.createElement("meta",{property:"og:image",content:metaImageUrl}),metaImage&&/*#__PURE__*/react_default.a.createElement("meta",{property:"twitter:image",content:metaImageUrl}),metaImage&&/*#__PURE__*/react_default.a.createElement("meta",{name:"twitter:image:alt",content:`Image for ${title}`}),permalink&&/*#__PURE__*/react_default.a.createElement("meta",{property:"og:url",content:siteUrl+permalink}),permalink&&/*#__PURE__*/react_default.a.createElement("link",{rel:"canonical",href:siteUrl+permalink})),/*#__PURE__*/react_default.a.createElement("div",{className:classnames_default()('container padding-vert--lg',styles_module_default.a.docItemWrapper)},/*#__PURE__*/react_default.a.createElement("div",{className:"row row--docitem"},/*#__PURE__*/react_default.a.createElement("div",{className:classnames_default()('col',{[styles_module_default.a.docItemCol]:!hideTableOfContents})},/*#__PURE__*/react_default.a.createElement("div",{className:styles_module_default.a.docItemContainer},/*#__PURE__*/react_default.a.createElement("article",null,version&&/*#__PURE__*/react_default.a.createElement("div",null,/*#__PURE__*/react_default.a.createElement("span",{className:"badge badge--secondary"},"Version: ",version)),!hideTitle&&/*#__PURE__*/react_default.a.createElement("header",null,/*#__PURE__*/react_default.a.createElement("h1",{className:styles_module_default.a.docTitle},title)),/*#__PURE__*/react_default.a.createElement("div",{className:"markdown"},/*#__PURE__*/react_default.a.createElement(DocContent,null))))),!hideTableOfContents&&DocContent.rightToc&&/*#__PURE__*/react_default.a.createElement(DocTOC,{headings:DocContent.rightToc}))));}/* harmony default export */ var theme_DocItem = __webpack_exports__["default"] = (DocItem);
 
 /***/ }),
 /* 56 */
@@ -11462,7 +11462,7 @@ function renderRoutes(routes, extraProps, switchProps) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony default export */ __webpack_exports__["a"] = ({"plugins":[],"themes":[],"customFields":{},"themeConfig":{"disableDarkMode":true,"announcementBar":{"id":"old_version","content":"This is a documentation website for Reanimated 2.0 alpha release. If you are looking for Reanimated 1 docs <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://software-mansion.github.io/react-native-reanimated/\">here is a link</a>","backgroundColor":"#ffaaa8","textColor":"#001a72"},"navbar":{"title":"React Native Reanimated","links":[{"to":"docs/about","activeBasePath":"docs","label":"Docs","position":"left"},{"href":"https://github.com/software-mansion/react-native-reanimated","label":"","position":"right"}]},"prism":{"theme":{"plain":{"color":"#ffffff","backgroundColor":"#001a72"},"styles":[{"types":["comment"],"style":{"color":"rgb(82, 88, 99)","fontStyle":"italic"}},{"types":["string"],"style":{"color":"#ffffff"}},{"types":["punctuation"],"style":{"color":"#ffee86"}},{"types":["variable","constant","builtin","attr-name"],"style":{"color":"#a3b8ff"}},{"types":["number","operator"],"style":{"color":"#ffaaa8"}},{"types":["keyword"],"style":{"color":"#8ed3ef"}},{"types":["char"],"style":{"color":"#a3b8ff"}},{"types":["tag"],"style":{"color":"#ffaaa8"}},{"types":["function"],"style":{"color":"#a3b8ff"}}]}},"footer":{"style":"dark","links":[]}},"title":"React Native Reanimated","tagline":"React Native's Animated library reimplemented","url":"https://rnreanimateddocs.com","baseUrl":"/","favicon":"img/SWM_Fav_192x192.png","organizationName":"software-mansion","projectName":"react-native-reanimated","presets":[["@docusaurus/preset-classic",{"docs":{"homePageId":"docs","sidebarPath":"/Users/tomekzawada/Documents/praca/reanimated-docs/documentation/sidebars.js","editUrl":"https://github.com/facebook/docusaurus/edit/master/website/"},"blog":{"showReadingTime":true,"editUrl":"https://github.com/facebook/docusaurus/edit/master/website/blog/"},"theme":{"customCss":"/Users/tomekzawada/Documents/praca/reanimated-docs/documentation/src/css/custom.css"}}]]});
+/* harmony default export */ __webpack_exports__["a"] = ({"plugins":[],"themes":[],"customFields":{},"themeConfig":{"disableDarkMode":true,"announcementBar":{"id":"old_version","content":"This is a documentation website for Reanimated 2.0 alpha release. If you are looking for Reanimated 1 docs <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://software-mansion.github.io/react-native-reanimated/\">here is a link</a>","backgroundColor":"#ffaaa8","textColor":"#001a72"},"navbar":{"title":"React Native Reanimated","links":[{"to":"docs/about","activeBasePath":"docs","label":"Docs","position":"left"},{"href":"https://github.com/software-mansion/react-native-reanimated","label":"","position":"right"}]},"prism":{"theme":{"plain":{"color":"#ffffff","backgroundColor":"#001a72"},"styles":[{"types":["comment"],"style":{"color":"#aaaaaa","fontStyle":"italic"}},{"types":["string"],"style":{"color":"#ffffff"}},{"types":["punctuation"],"style":{"color":"#ffee86"}},{"types":["variable","constant","builtin","attr-name"],"style":{"color":"#a3b8ff"}},{"types":["number","operator"],"style":{"color":"#ffaaa8"}},{"types":["keyword"],"style":{"color":"#8ed3ef"}},{"types":["char"],"style":{"color":"#a3b8ff"}},{"types":["tag"],"style":{"color":"#ffaaa8"}},{"types":["function"],"style":{"color":"#a3b8ff"}}]}},"footer":{"style":"dark","links":[]}},"title":"React Native Reanimated","tagline":"React Native's Animated library reimplemented","url":"https://rnreanimateddocs.com","baseUrl":"/","favicon":"img/SWM_Fav_192x192.png","organizationName":"software-mansion","projectName":"react-native-reanimated","presets":[["@docusaurus/preset-classic",{"docs":{"homePageId":"docs","sidebarPath":"/Users/tomekzawada/Documents/praca/reanimated-docs/documentation/sidebars.js","editUrl":"https://github.com/facebook/docusaurus/edit/master/website/"},"blog":{"showReadingTime":true,"editUrl":"https://github.com/facebook/docusaurus/edit/master/website/blog/"},"theme":{"customCss":"/Users/tomekzawada/Documents/praca/reanimated-docs/documentation/src/css/custom.css"}}]]});
 
 /***/ }),
 /* 65 */
@@ -15604,9 +15604,170 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
-const frontMatter={id:'installation',title:'Installation',sidebar_label:'Installation'};const metadata={"id":"installation","title":"Installation","description":"Reanimated 2 is primarily build in C++ using Turbo Modules infrastructure which is not yet completely deployed in React Native (specifically on Android).","source":"@site/docs/installation.md","permalink":"/docs/installation","editUrl":"https://github.com/facebook/docusaurus/edit/master/website/docs/installation.md","sidebar_label":"Installation","sidebar":"someSidebar","previous":{"title":"About React Native Reanimated","permalink":"/docs/about"},"next":{"title":"Worklets","permalink":"/docs/worklets"}};/* @jsx mdx */const rightToc=[];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_Users_tomekzawada_Documents_praca_reanimated_docs_documentation_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Reanimated 2 is primarily build in C++ using `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_tomekzawada_Documents_praca_reanimated_docs_documentation_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"https://github.com/react-native-community/discussions-and-proposals/issues/40"}),`Turbo Modules`),` infrastructure which is not yet completely deployed in React Native (specifically on Android).
-Because of that the installation of new Reanimated requires additional steps apart from just adding a dependency to `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`package.json`),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`As a consequence of the above the minimum suppoorted version of React Native is `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_tomekzawada_Documents_praca_reanimated_docs_documentation_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"https://github.com/facebook/react-native/releases/tag/v0.62.0"}),`v0.62`),`.
-Before you continue with the installation, make sure that you are running the supported version of React Native.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Please follow the below instructions for Android and iOS.`));};MDXContent.isMDXComponent=true;
+const frontMatter={id:'installation',title:'Installation',sidebar_label:'Installation'};const metadata={"id":"installation","title":"Installation","description":"Reanimated 2 is primarily build in C++ using Turbo Modules infrastructure which is not yet completely deployed in React Native (specifically on Android).","source":"@site/docs/installation.md","permalink":"/docs/installation","editUrl":"https://github.com/facebook/docusaurus/edit/master/website/docs/installation.md","sidebar_label":"Installation","sidebar":"someSidebar","previous":{"title":"About React Native Reanimated","permalink":"/docs/about"},"next":{"title":"Worklets","permalink":"/docs/worklets"}};/* @jsx mdx */const rightToc=[{value:'Babel plugin',id:'babel-plugin',children:[]},{value:'Android',id:'android',children:[]},{value:'iOS',id:'ios',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_Users_tomekzawada_Documents_praca_reanimated_docs_documentation_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Reanimated 2 is primarily build in C++ using `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_tomekzawada_Documents_praca_reanimated_docs_documentation_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"https://github.com/react-native-community/discussions-and-proposals/issues/40"}),`Turbo Modules`),` infrastructure which is not yet completely deployed in React Native (specifically on Android).
+Because of that the installation of new Reanimated requires additional steps apart from just adding a dependency to `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`package.json`),` . `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`As a consequence of the above the minimum suppoorted version of React Native is `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_tomekzawada_Documents_praca_reanimated_docs_documentation_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"https://github.com/facebook/react-native/releases/tag/v0.62.0"}),`v0. 62`),`.
+Before you continue with the installation, make sure that you are running the supported version of React Native. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Please follow the below instructions for Android and iOS. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"babel-plugin"},`Babel plugin`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"li"},`add Reanimated plugin to your `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`babel.config.js`),` :`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",{parentName:"li"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_tomekzawada_Documents_praca_reanimated_docs_documentation_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-js","metastring":"{5}","{5}":true}),`  module.exports = {
+      ...
+      plugins: [
+          ...
+          './node_modules/react-native-reanimated/babel-plugin.js',
+      ],
+  };
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",{parentName:"li"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("em",{parentName:"strong"},`NOTE:`)),`  Reanimated plugin has to be listed last. `)))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"android"},`Android`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ol",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ol"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"li"},`Turn on Hermes engine by editting `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`android/app/build.gradle`),` `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",{parentName:"li"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_tomekzawada_Documents_praca_reanimated_docs_documentation_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-java","metastring":"{2}","{2}":true}),`project.ext.react = [
+  enableHermes: true  // <- here | clean and rebuild if changing
+]
+`))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ol"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"li"},`Turn on TurboModules by editting `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`MainApplication.java`),` `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",{parentName:"li"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_tomekzawada_Documents_praca_reanimated_docs_documentation_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-java","metastring":"{1,6}","{1,6}":true}),`import com.facebook.react.config.ReactFeatureFlags; // <- add
+...
+public class MainApplication extends Application implements ReactApplication {
+  ...
+  static { 
+    ReactFeatureFlags.useTurboModules = true; // <- add
+  }
+  ...
+`))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ol"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"li"},`Plug Reanimated `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",{parentName:"li"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_tomekzawada_Documents_praca_reanimated_docs_documentation_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-java","metastring":"{1-2,14}","{1-2,14}":true}),`  import com.facebook.react.bridge.JSIModulePackage; // <- add
+  import com.swmansion.reanimated.ReanimatedJSIModulePackage; // <- add
+  ...
+  private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
+  ...
+
+  @Override
+  protected String getJSMainModuleName() {
+    return "index";
+  }
+
+  @Override
+  protected JSIModulePackage getJSIModulePackage() {
+    return new ReanimatedJSIModulePackage(); // <- add
+  }
+};
+...
+`)))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"ios"},`iOS`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ol",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ol"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"li"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`cd ios && pod install && cd ..`),` `)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ol"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"li"},`Add bridge property to `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`AppDelegate.h`),` `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",{parentName:"li"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_tomekzawada_Documents_praca_reanimated_docs_documentation_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-objectivec","metastring":"{2,6}","{2,6}":true}),`... 
+@class RCTBridge; // <-add 
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
+... 
+@property (nonatomic, readonly) RCTBridge *bridge; // <-add
+... 
+@end
+`)))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ol",{"start":3},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ol"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"li"},`Rename `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`AppDelegate.m`),` to `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`AppDelagate.mm`),` `)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ol"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"li"},`Add AppDelegate category `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",{parentName:"li"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_tomekzawada_Documents_praca_reanimated_docs_documentation_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-objectivec","metastring":"{4-14}","{4-14}":true}),`#import <React/RCTCxxBridgeDelegate.h> 
+#import <ReactCommon/RCTTurboModuleManager.h>
+...
+@interface AppDelegate() <RCTCxxBridgeDelegate, RCTTurboModuleManagerDelegate>{
+
+#ifdef RN_FABRIC_ENABLED
+  RCTSurfacePresenterBridgeAdapter *_bridgeAdapter;
+  std::shared_ptr<const facebook::react::ReactNativeConfig> _reactNativeConfig;
+  facebook::react::ContextContainer::Shared _contextContainer;
+#endif
+
+    RCTTurboModuleManager *_turboModuleManager;
+}
+@end
+`))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ol"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"li"},`Enable TurboModules`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",{parentName:"li"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_tomekzawada_Documents_praca_reanimated_docs_documentation_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-objectivec","metastring":"{3}","{3}":true}),`  + (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+  {
+    RCTEnableTurboModule(YES); // <- add
+`))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ol"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"li"},`Set bridge property`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",{parentName:"li"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_tomekzawada_Documents_praca_reanimated_docs_documentation_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-objectivec"}),`  + (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+
+  {
+    ...
+    _bridge = 
+    ...
+`))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ol"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"li"},`Add missing methods`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",{parentName:"li"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_tomekzawada_Documents_praca_reanimated_docs_documentation_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-objectivec"}),`// add headers
+#import <React/RCTDataRequestHandler. h>
+#import <React/RCTFileRequestHandler. h>
+#import <React/RCTHTTPRequestHandler. h>
+#import <React/RCTNetworking. h>
+#import <React/RCTLocalAssetImageLoader. h>
+#import <React/RCTGIFImageDecoder. h>
+#import <React/RCTImageLoader. h>
+#import "RETurboModuleProvider. h"
+#import <React/JSCExecutorFactory. h>
+... 
+@implementation AppDelegate
+... 
+
+# pragma mark - RCTCxxBridgeDelegate
+
+// add
+
+* (std::unique_ptr<facebook::react:: JSExecutorFactory>)jsExecutorFactoryForBridge:(RCTBridge *)bridge
+
+{
+  _turboModuleManager = [[RCTTurboModuleManager alloc] initWithBridge:bridge delegate:self]; 
+  __weak __typeof(self) weakSelf = self; 
+  return std::make_unique<facebook::react:: JSCExecutorFactory>([weakSelf, bridge](facebook::jsi:: Runtime &runtime) {
+
+    if (!bridge) {
+      return;
+    }
+    __typeof(self) strongSelf = weakSelf;
+    if (strongSelf) {
+      [strongSelf->_turboModuleManager installJSBindingWithRuntime:&runtime];
+    }
+
+  }); 
+}
+
+  #pragma mark RCTTurboModuleManagerDelegate
+
+// add
+
+* (Class)getModuleClassFromName:(const char *)name
+
+{
+  return facebook::react:: RETurboModuleClassProvider(name); 
+}
+
+// add
+
+* (std::shared_ptr<facebook::react:: TurboModule>)getTurboModule:(const std::string &)name
+
+                                                      jsInvoker:(std::shared_ptr<facebook::react::CallInvoker>)jsInvoker
+
+{
+  return facebook::react:: RETurboModuleProvider(name, jsInvoker); 
+}
+
+// add
+
+* (std::shared_ptr<facebook::react:: TurboModule>)getTurboModule:(const std::string &)name
+
+                                                       instance:(id<RCTTurboModule>)instance
+                                                      jsInvoker:(std::shared_ptr<facebook::react::CallInvoker>)jsInvoker
+
+{
+  return facebook::react:: RETurboModuleProvider(name, instance, jsInvoker); 
+}
+
+// add 
+
+* (id<RCTTurboModule>)getModuleInstanceFromClass:(Class)moduleClass
+
+{
+  if (moduleClass == RCTImageLoader. class) {
+
+    return [[moduleClass alloc] initWithRedirectDelegate:nil loadersProvider:^NSArray<id<RCTImageURLLoader>> *{
+      return @[[RCTLocalAssetImageLoader new]];
+    } decodersProvider:^NSArray<id<RCTImageDataDecoder>> *{
+      return @[[RCTGIFImageDecoder new]];
+    }];
+
+  } else if (moduleClass == RCTNetworking. class) {
+
+    return [[moduleClass alloc] initWithHandlersProvider:^NSArray<id<RCTURLRequestHandler>> *{
+      return @[
+        [RCTHTTPRequestHandler new],
+        [RCTDataRequestHandler new],
+        [RCTFileRequestHandler new],
+      ];
+    }];
+
+  }
+  return [moduleClass new]; 
+}
+ 
+@end
+`)))));};MDXContent.isMDXComponent=true;
 
 /***/ }),
 /* 125 */
